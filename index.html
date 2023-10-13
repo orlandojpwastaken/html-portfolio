@@ -2,6 +2,7 @@
 <html>
     <head>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orlando's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="pfp.jpg">
     </head>
@@ -13,7 +14,8 @@
 <hr/>
 <body>
 <div id="introduction">
-    <img src="pfp.jpg" alt="Orlando" title="Orlando" height=200; style="float:right; padding: 10px;"> 
+    <img src="pfp.jpg" alt="Orlando" title="Orlando" style="align-self: center; height: 30vh" > 
+    <div id="box-text-l">
     <h2>
         Introduction:
     </h2>
@@ -24,9 +26,11 @@
         As of the making of this HTML Portfolio, I am in the second<br>
         week of my first semester.
     </p>
+    </div>
 </div>
 <div id="education">
-    <img src="school.png" alt="Education" title="Education" height=200; style="float:right; padding: 10px;"> 
+    <img src="school.png" alt="Education" title="Education" style="align-self: center; height: 30vh; float: right;"> 
+    <div id="box-text-r">
     <h2>
         Education:
     </h2>
@@ -37,9 +41,11 @@
         <li> <a href="https://www.bukitsion.sch.id/index.php?modul=thigh">Bukit Sion High School</a> [2020-2023]</li>
         <li> <a href="https://international.binus.ac.id">Binus University International</a> [Current]</li>
     </ol>
+    </div>
 </div>
 <div id="about-me">
-    <img src="aboutme.png" alt="About Me" title="About Me" height="260px" style="float:right; padding:10px;">
+    <img src="aboutme.png" alt="About Me" title="About Me" style="align-self: center; height: 30vh">
+    <div id="box-text-l">
     <h2>About Me:</h2>
     <p> Full Name: Orlando Jonathan Padiman<br>
         Gender:<input type="radio" disabled checked> Male <input type="radio" disabled >Female<br>
@@ -52,25 +58,28 @@
         <li>Programming</li>
         </ul>
     </p>
+    </div>
 </div>
 <div id="prog-skills">
-    <img src="prog.png" alt="Programming Skills" title="Programming Skills" height=260px; style="float:right; padding: 10px;"> 
+    <img src="prog.png" alt="Programmin Skills" title="Programming Languages" style="align-self: center; height: 30vh; float: right;"> 
+    <div id="box-text-r">
     <h2>
         Programming Skills Proficiency:
     </h2>
-    <input type="checkbox" disabled checked> Python<br>
-    <input type="checkbox"> Java<br>
-    <input type="checkbox"> C++<br>
-    <input type="checkbox"> C<br>
-    <input type="checkbox"> Javascript<br>
-    <input type="checkbox"> Swift<br>
-    <input type="checkbox"> Ruby<br>
-    <input type="checkbox"> C#<br>
-    <input type="checkbox"> SQL
+    <input type="checkbox" disabled checked id="python" name="python"> <label for="Python"> Python </label><br>
+    <input type="checkbox" id="java" name="java"> <label for="java"> Java</label><br>
+    <input type="checkbox" id="c++" name="c++"> <label for="c++"> C++ </label><br>
+    <input type="checkbox" id="c" name="c"> <label for="c"> C </label><br>
+    <input type="checkbox" id="jvs" name="jvs"> <label for="jvs"> Javascript </label><br>
+    <input type="checkbox" id="swift" name="swift"> <label for="swift"> Swift </label><br>
+    <input type="checkbox" id="ruby" name="ruby"> <label for="ruby"> Ruby </label><br>
+    <input type="checkbox" id="c#" name="c#"> <label for="c#"> C# </label><br>
+    <input type="checkbox" id="SQL" name="SQL"> <label for="SQL"> SQL </label></label>
+    </div>
 </div>
 <div id="socmed">
     <h2 style="text-align: center;">Connect with Me!</h2>
-    <p style="float: left;"> Github - orlandojpwastaken </p>
+    <p style="float: left;"> Github - orlandojpwastaken </p> &nbsp;&nbsp;&nbsp;
     <p style="float:right"> Instagram - itsyaboiorlando</p>
 <br>
 <br>
@@ -80,6 +89,7 @@
     <a href="https://www.instagram.com/itsyaboiorlando">
     <img src="insta.png" alt="Instagram" title="itsyaboiorlando" height=200px; style="position:absolute; right: 50px;">
     </a>
+    <br><br><br><br><br><br><br><br>
 </div>
 </body>
 </html>
