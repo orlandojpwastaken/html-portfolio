@@ -1,87 +1,82 @@
-header{
-    background-image: url("bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: cornflowerblue;
-    background-size:cover;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+* {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
     display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;  
+    flex-direction: column;
+    background: url(wallpaperr.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    width: 100%;
+}
+
+header{
+    background: rgba(17, 17, 17, 0.8);
+    text-align: center;
 }
 
 hr{
-    border-top: 5px double cornflowerblue;
+    border-top: 5px double rgb(59, 60, 61);
 }
 
-#introduction {
-    background-color: cornflowerblue;
-    border: 5px solid slateblue;
-    width: fit-content;
-    padding: 50px;
-    margin: auto;
-    font-size: large;
-    float:left;
-    display:flex;  
-}
-
-#box-text-l {
+.container1, .container2{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-bottom: 5px;
 }
 
-#box-text-r {
+#introduction, #education, #about-me, #prog-skills {
+    background-color: rgba(65, 65, 65, 0.68);
+    width: 40%;
+    border: 10px solid rgba(73, 72, 72, 0.562);
+    padding: 50px;
+    font-size: large;
+}
+
+.container3{
+    width: 100vw;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin-right: 20px;
 }
 
-#education {
-    background-color: cornflowerblue;
-    border: 5px solid slateblue;
-    width: fit-content;
-    padding: 50px;
-    margin: auto;	
-    float: right;
-    font-size: large;
-    display:flex; 
-}
-#about-me {
-    background-color: cornflowerblue;
-    border: 5px solid slateblue;
-    width:fit-content;
-    padding: 50px;
-    margin: auto;
-    font-size: large;
-    float:left;
-    display:flex;  
-    }
-
-#prog-skills {
-    background-color: cornflowerblue;
-    border: 5px solid slateblue;
-    width: fit-content;
-    padding: 50px;
-    margin: auto;	
-    float: right;
-    font-size: large;
-    display:flex; 
-}
-#socmed {
-    background-color: cornflowerblue;
-    border: 5px solid slateblue;
+.container3 .logo-container{
     width: 100%;
-    height: fit-content;
-    padding: 50px;
-    margin: auto;	
-    float:left;
-    font-size: large;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
+
+#socmed {
+    width: 50%;
+    height: 300px;
+    background-color: rgba(65, 65, 65, 0.68);
+    border: 10px solid rgba(73, 72, 72, 0.562);
+    padding: 50px;
+    font-size: large;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1100px) {
+    #introduction, #education, #about-me, #prog-skills, #socmed {
+        width: 80%;
+    }
+    
+    #education, #prog-skills{
+        margin-top: 5px;
+    }
+  }
